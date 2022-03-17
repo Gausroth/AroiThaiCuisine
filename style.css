@@ -30,14 +30,14 @@ body {
 
 #main {
     font-size: 20px;
-    width: 75vw;
+    width: 75%;
     margin: auto;
 }
 
 #NavBar {
     display: flex;
     height: fit-content();
-    width: 74vw;
+    width: 74%;
     position: fixed;
     justify-content: space-between;
     align-items: center;
@@ -110,8 +110,12 @@ tableprice {
         background-size: 90vw;
     }
 
-    main{
-        width: 90vw;
+    #main {
+        width: 90%;
+    }
+
+    #NavBar {
+        width: 86%;
     }
 
     #flexcontainer1 {
