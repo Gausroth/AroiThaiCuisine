@@ -110,6 +110,10 @@ tableprice {
         background-size: 90vw;
     }
 
+    main{
+        width: 90vw;
+    }
+
     #flexcontainer1 {
         height: fit-content();
         flex-direction: column;
