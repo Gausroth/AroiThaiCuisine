@@ -1,0 +1,155 @@
+﻿
+/*Dark Mode*/
+.dark-mode {
+    background-color: rgb(56,56,56);
+}
+
+/*Dark Mode*/
+#darkModeBtn {
+    border-radius: 25%;
+    background-color: rgb(56,56,56);
+    width: 35px;
+    height: 35px;
+}
+
+body {
+    height: 100%;
+    /*    color: rgb(119,119,119);*/
+    color: black;
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 600px;
+}
+
+#flexcontainer {
+    display: flex;
+    /*    flex-wrap: wrap;*/
+    flex-flow: column wrap;
+}
+
+#main {
+    font-size: 25px;
+    width: 75vw;
+    margin: auto;
+}
+
+#NavBar {
+    width: 74vw;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+#banner {
+    margin-top: 50px;
+    height: 500px;
+    text-align: center;
+    line-height: 500px;
+    background-image: url(Thai_Flag.png);
+    background-size: 100% 100%;
+}
+
+#spacer {
+    height: 250px;
+}
+
+#flexcontainer1 {
+    display: flex;
+    height: 500px;
+    background-image: url(Buddha.png);
+    justify-content: center;
+}
+
+#flexcontainer2 {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+}
+
+#flexcontainer3 {
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    background-color: white;
+}
+
+#flexcontainersection {
+    width: 45%;
+    text-align: center;
+    flex-flow: wrap;
+}
+
+#footer {
+    height: 500px;
+    text-align: center;
+    width: 75vw;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    width: 100%;
+}
+
+tablename {
+    justify-content: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+tableprice {
+    justify-content: right;
+    height: 100px;
+    line-height: 100px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: 90vw;
+    }
+
+    #main {
+        width: 90vw;
+        margin: initial;
+    }
+
+    #NavBar {
+        width: 90vw;
+    }
+
+    #flexcontainer1 {
+        height: 750px;
+        flex-direction: column;
+        background-image: url(BuddhaLarge.png);
+    }
+
+    #flexcontainer2 {
+        height: 750px;
+        flex-direction: column;
+    }
+
+    #flexcontainer3 {
+        height: 1400px;
+        flex-direction: column;
+    }
+
+    #flexcontainersection {
+        width: 90vw;
+        text-align: center;
+    }
+
+    #flexcontainercontactus {
+        width: 90vw;
+        margin: auto;
+        text-align: center;
+    }
+}
