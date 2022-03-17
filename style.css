@@ -80,7 +80,7 @@ body {
 #footer {
     height: fit-content();
     text-align: center;
-    width: 75vw;
+    width: 75%;
     margin: auto;
 }
 
@@ -107,7 +107,7 @@ tableprice {
 
 @media (max-width: 600px) {
     body {
-        background-size: 90vw;
+        background-size: 95%;
     }
 
     #main {
@@ -130,14 +130,10 @@ tableprice {
     }
 
     #flexcontainersection, #flexcontainercontactus {
-        width: 70vw;
+        width: 95%;
         align-items: center;
         justify-content: center;
         margin: auto;
-    }
-
-    #spacer {
-        height: 250px;
     }
 
     .google-maps {
