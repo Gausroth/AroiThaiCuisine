@@ -46,7 +46,6 @@ body {
 
 #banner {
     display: flex;
-    /*    margin: auto;*/
     height: 250px;
     align-items: center;
     justify-content: center;
@@ -60,15 +59,13 @@ body {
 
 #flexcontainer1 {
     display: flex;
-    /*    margin: auto;*/
     height: fit-content();
+    align-items: center;
     justify-content: center;
-    background-image: url(Buddha.jpg);
 }
 
 #flexcontainer2 {
     display: flex;
-    /*    margin: auto;*/
     height: fit-content();
     align-items: center;
     justify-content: center;
@@ -96,7 +93,6 @@ a {
 
 table {
     width: 100%;
-
 }
 
 tablename {
@@ -131,10 +127,14 @@ tableprice {
         justify-content: center;
         margin: auto;
     }
+
+    #spacer {
+        height: 250px;
+    }
+
     .google-maps {
         position: relative;
         padding-bottom: 75%;
-        // This is the aspect ratio height: 0;
         overflow: hidden;
     }
 
