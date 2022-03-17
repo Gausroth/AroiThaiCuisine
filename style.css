@@ -14,8 +14,7 @@
 
 body {
     height: 100%;
-    /*    color: rgb(119,119,119);*/
-    color: black;
+    color: rgb(119,119,119);
     background-image: url(Logo.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -25,31 +24,31 @@ body {
 
 #flexcontainer {
     display: flex;
-    /*    flex-wrap: wrap;*/
     flex-flow: column wrap;
 }
 
 #main {
-    font-size: 25px;
+    font-size: 20px;
     width: 75vw;
     margin: auto;
 }
 
 #NavBar {
+    display: flex;
+    height: 50px;
     width: 74vw;
     position: fixed;
-    height: 50px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
 }
 
 #banner {
-    margin-top: 50px;
+    display: flex;
+    /*    margin: auto;*/
     height: 500px;
-    text-align: center;
-    line-height: 500px;
+    align-items: center;
+    justify-content: center;
     background-image: url(Thai_Flag.jpg);
     background-size: 100% 100%;
 }
@@ -60,20 +59,25 @@ body {
 
 #flexcontainer1 {
     display: flex;
+    /*    margin: auto;*/
     height: 500px;
-    background-image: url(Buddha.jpg);
     justify-content: center;
+    background-image: url(Buddha.jpg);
 }
 
 #flexcontainer2 {
     display: flex;
+    /*    margin: auto;*/
     height: 500px;
+    align-items: center;
     justify-content: center;
 }
 
 #flexcontainer3 {
     display: flex;
+    /*    margin: auto;*/
     height: 700px;
+    align-items: center;
     justify-content: center;
     background-color: white;
 }
@@ -94,36 +98,27 @@ body {
 a {
     text-decoration: none;
     color: black;
+    font-weight:700;
 }
 
 table {
     width: 100%;
+
 }
 
 tablename {
+    align-items: center;
     justify-content: center;
-    height: 100px;
-    line-height: 100px;
 }
 
 tableprice {
-    justify-content: right;
-    height: 100px;
-    line-height: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 600px) {
     body {
         background-size: 90vw;
-    }
-
-    #main {
-        width: 90vw;
-        margin: initial;
-    }
-
-    #NavBar {
-        width: 90vw;
     }
 
     #flexcontainer1 {
@@ -142,14 +137,24 @@ tableprice {
         flex-direction: column;
     }
 
-    #flexcontainersection {
-        width: 90vw;
-        text-align: center;
+    #flexcontainersection, #flexcontainercontactus {
+        width: 70vw;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%;
+        // This is the aspect ratio height: 0;
+        overflow: hidden;
     }
 
-    #flexcontainercontactus {
-        width: 90vw;
-        margin: auto;
-        text-align: center;
-    }
+        .google-maps iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
 }
